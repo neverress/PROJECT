@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f0b27aef-03e9-4303-ad9f-aea0bf8a2844" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/pythonProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TESTS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/b.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console_app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console_app_TEST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e50e0008ead947c580b32f17ab4d96cc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/f.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_trained.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_v16.keras" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neur_recognition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic_sign_model.keras" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic_sign_recognition_CHECK.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/traffic_sign_recognition_MAIN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/доп моменты.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/е.jpg" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2q4s0BAt9kfLMw3OufVtBoXrwid" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests in console_app_TEST.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.TEST.executor&quot;: &quot;Run&quot;,
+    &quot;Python.consol.executor&quot;: &quot;Run&quot;,
+    &quot;Python.console_app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.console_app_TEST.executor&quot;: &quot;Run&quot;,
+    &quot;Python.model_v16.executor&quot;: &quot;Run&quot;,
+    &quot;Python.net.executor&quot;: &quot;Run&quot;,
+    &quot;Python.neur_recognition.executor&quot;: &quot;Run&quot;,
+    &quot;Python.new.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testingcode.executor&quot;: &quot;Run&quot;,
+    &quot;Python.traffic_sign_recognition.executor&quot;: &quot;Run&quot;,
+    &quot;Python.traffic_sign_recognition_CHECK.executor&quot;: &quot;Run&quot;,
+    &quot;Python.traffic_sign_recognition_MAIN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.распознавание знаков.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ВУЗ/ПРОЕКТ АИП/pythonProject&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.splitter.proportion&quot;: &quot;0.2379518&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ВУЗ\ПРОЕКТ АИП\pythonProject" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.consol">
+    <configuration name="просто запуск нейронки из консоли" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\ВУЗ\ПРОЕКТ АИП\pythonProject\просто запуск нейронки из консоли.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="consol" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/consol.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.consol" />
+        <item itemvalue="Python.просто запуск нейронки из консоли" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0b27aef-03e9-4303-ad9f-aea0bf8a2844" name="Changes" comment="" />
+      <created>1733932956679</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733932956679</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

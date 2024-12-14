@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "DTD/xhtml1-strict.dtd">
+<html>
+  
+
+  <head>
+    
+    <title>traffic_sign_recognition_MAIN</title>
+    <meta name="generator" content="pydoctor 24.11.1"> 
+        
+    </meta>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="apidocs.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+    
+</head>
+
+  <body>
+
+    
+
+    <nav class="navbar navbar-default mainnavbar">
+      
+  
+  <div class="container-fluid">
+
+
+    <div class="navbar-header">
+      
+      <div class="navlinks">
+        <span class="navbar-brand">
+          traffic_sign_recognition_MAIN <a href="index.html">API Documentation</a>
+        </span>
+
+        <a href="moduleIndex.html">
+          Modules
+        </a>
+
+        <a href="classIndex.html">
+          Classes
+        </a>
+
+        <a href="nameIndex.html">
+          Names
+        </a>
+
+        <div id="search-box-container">
+          <div class="input-group">
+            <input id="search-box" type="search" name="search-query" placeholder="Search..." aria-label="Search" minlength="2" class="form-control" autocomplete="off" />
+            
+            <span class="input-group-btn">
+              <a style="display: none;" class="btn btn-default" id="search-clear-button" title="Clear" onclick="clearSearch()"><img src="fonts/x-circle.svg" alt="Clear" /></a>
+              <a class="btn btn-default" id="apidocs-help-button" title="Help" href="apidocs-help.html"><img src="fonts/info.svg" alt="Help" /></a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="search-results-container" style="display: none;">
+        
+        <div id="search-buttons">
+          <span class="label label-default" id="search-docstrings-button">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="toggle-search-in-docstrings-checkbox" value="false" onclick="toggleSearchInDocstrings()">
+              search in docstrings
+            </input>
+          </label>
+          </span>
+          
+        </div>
+        
+        <noscript>
+            <h1>Cannot search: JavaScript is not supported/enabled in your browser.</h1>
+        </noscript>
+
+        <div id="search-status"> </div>
+
+        <div class="warning" id="search-warn-box" style="display: none;">
+          <p class="rst-last"><span id="search-warn"></span></p>
+        </div>
+
+        <table id="search-results">
+          <!-- Filled dynamically by JS -->
+        </table>
+        
+        <div style="margin-top: 10px;">
+          <p>For more information on the search, visit the <a href="apidocs-help.html#rst-search">help page</a>.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</nav>
+    
+    <div class="container-fluid">
+
+      <!-- Side navigation -->
+      <div class="sidebarcontainer" style="display: none;">
+        
+        <div class="sidebar"><nav class="sidebar">
+  
+
+  <div>
+
+      <div class="thingTitle">
+        <span>Module</span>
+        <code class="thisobject"><a href="index.html" class="internal-link" title="This module">traffic_sign_recognition_<wbr></wbr>MAIN</a></code> 
+      </div>
+      
+      <div>
+        
+
+        
+         
+
+        <div class="childrenKindTitle">Classes</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="traffic_sign_recognition_MAIN.DataNotFoundError.html" class="internal-link" title="traffic_sign_recognition_MAIN.DataNotFoundError"><wbr></wbr>Data<wbr></wbr>Not<wbr></wbr>Found<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="traffic_sign_recognition_MAIN.InvalidInputError.html" class="internal-link" title="traffic_sign_recognition_MAIN.InvalidInputError"><wbr></wbr>Invalid<wbr></wbr>Input<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="traffic_sign_recognition_MAIN.TrafficSignRecognitionError.html" class="internal-link" title="traffic_sign_recognition_MAIN.TrafficSignRecognitionError"><wbr></wbr>Traffic<wbr></wbr>Sign<wbr></wbr>Recognition<wbr></wbr>Error</a></code>
+            </div>
+        
+
+    </li>
+</ul>
+
+        <div class="childrenKindTitle">Functions</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#add_image_to_dataset" class="internal-link" title="traffic_sign_recognition_MAIN.add_image_to_dataset">add<wbr></wbr>_image<wbr></wbr>_to<wbr></wbr>_dataset</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#create_model" class="internal-link" title="traffic_sign_recognition_MAIN.create_model">create<wbr></wbr>_model</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#load_data" class="internal-link" title="traffic_sign_recognition_MAIN.load_data">load<wbr></wbr>_data</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#preprocess" class="internal-link" title="traffic_sign_recognition_MAIN.preprocess">preprocess</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#train_model" class="internal-link" title="traffic_sign_recognition_MAIN.train_model">train<wbr></wbr>_model</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#visualize_data_distribution" class="internal-link" title="traffic_sign_recognition_MAIN.visualize_data_distribution">visualize<wbr></wbr>_data<wbr></wbr>_distribution</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+
+        <div class="childrenKindTitle">Variables</div>
+        <ul>
+    
+    <li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#image_dimensions" class="internal-link" title="traffic_sign_recognition_MAIN.image_dimensions">image<wbr></wbr>_dimensions</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#label_file" class="internal-link" title="traffic_sign_recognition_MAIN.label_file">label<wbr></wbr>_file</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#path" class="internal-link" title="traffic_sign_recognition_MAIN.path">path</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#test_ratio" class="internal-link" title="traffic_sign_recognition_MAIN.test_ratio">test<wbr></wbr>_ratio</a></code>
+            </div>
+        
+
+    </li><li class="">
+        
+        
+        
+
+        
+            <div class="itemName"><code><a href="#validation_ratio" class="internal-link" title="traffic_sign_recognition_MAIN.validation_ratio">validation<wbr></wbr>_ratio</a></code>
+            </div>
+        
+
+    </li>
+</ul> 
+
+        
+         
+        
+      </div>
+  </div>
+
+</nav>
+        </div>
+        <div id="collapseSideBar">
+          <a class="btn btn-link" onclick="toggleSideBarCollapse()" title="Toggle Sidebar Collapse">
+          </a>
+        </div> 
+        <script src="sidebartoggle.js" type="text/javascript"></script>
+       
+      </div>
+
+      <div id="main" class="">
+        
+
+        
+
+        <div class="page-header">
+          <h1 class="module"><code><code><a href="index.html" class="internal-link">traffic_sign_recognition_MAIN</a></code></code></h1>
+          <div id="showPrivate">
+            <button class="btn btn-link" onclick="togglePrivate()">Toggle Private API</button>
+          </div>
+        </div>
+
+        <div class="categoryHeader">
+          module documentation
+        </div>
+
+        <div class="extrasDocstring">
+          
+          <p></p>
+        </div>
+
+        <div class="moduleDocstring">
+          <div><p class="undocumented">Undocumented</p></div>
+        </div>
+
+        <div id="splitTables">
+          <table class="children sortable" id="id1">
+  
+  
+  <tr class="exception">
+    
+    <td>Exception</td>
+    <td><code><a href="traffic_sign_recognition_MAIN.DataNotFoundError.html" class="internal-link" title="traffic_sign_recognition_MAIN.DataNotFoundError"><wbr></wbr>Data<wbr></wbr>Not<wbr></wbr>Found<wbr></wbr>Error</a></code></td>
+    <td>Исключение, если данные не найдены.</td>
+  </tr><tr class="exception">
+    
+    <td>Exception</td>
+    <td><code><a href="traffic_sign_recognition_MAIN.InvalidInputError.html" class="internal-link" title="traffic_sign_recognition_MAIN.InvalidInputError"><wbr></wbr>Invalid<wbr></wbr>Input<wbr></wbr>Error</a></code></td>
+    <td>Исключение для некорректного ввода.</td>
+  </tr><tr class="exception">
+    
+    <td>Exception</td>
+    <td><code><a href="traffic_sign_recognition_MAIN.TrafficSignRecognitionError.html" class="internal-link" title="traffic_sign_recognition_MAIN.TrafficSignRecognitionError"><wbr></wbr>Traffic<wbr></wbr>Sign<wbr></wbr>Recognition<wbr></wbr>Error</a></code></td>
+    <td>Базовый класс для исключений в этом модуле.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#add_image_to_dataset" class="internal-link" title="traffic_sign_recognition_MAIN.add_image_to_dataset">add<wbr></wbr>_image<wbr></wbr>_to<wbr></wbr>_dataset</a></code></td>
+    <td>Добавление нового изображения в датасет.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#create_model" class="internal-link" title="traffic_sign_recognition_MAIN.create_model">create<wbr></wbr>_model</a></code></td>
+    <td>Создание модели CNN.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#load_data" class="internal-link" title="traffic_sign_recognition_MAIN.load_data">load<wbr></wbr>_data</a></code></td>
+    <td>Загрузка изображений и меток из датасета.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#preprocess" class="internal-link" title="traffic_sign_recognition_MAIN.preprocess">preprocess</a></code></td>
+    <td>Преобразование изображения в оттенки серого, выравнивание контраста и нормализация.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#train_model" class="internal-link" title="traffic_sign_recognition_MAIN.train_model">train<wbr></wbr>_model</a></code></td>
+    <td>Обучение модели.</td>
+  </tr><tr class="function">
+    
+    <td>Function</td>
+    <td><code><a href="#visualize_data_distribution" class="internal-link" title="traffic_sign_recognition_MAIN.visualize_data_distribution">visualize<wbr></wbr>_data<wbr></wbr>_distribution</a></code></td>
+    <td>Визуализация распределения классов в датасете.</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#image_dimensions" class="internal-link" title="traffic_sign_recognition_MAIN.image_dimensions">image<wbr></wbr>_dimensions</a></code></td>
+    <td>tuple: Размеры изображений.</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#label_file" class="internal-link" title="traffic_sign_recognition_MAIN.label_file">label<wbr></wbr>_file</a></code></td>
+    <td>str: Имя файла с метками классов.</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#path" class="internal-link" title="traffic_sign_recognition_MAIN.path">path</a></code></td>
+    <td>str: Путь к папке с изображениями для обучения и тестирования.</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#test_ratio" class="internal-link" title="traffic_sign_recognition_MAIN.test_ratio">test<wbr></wbr>_ratio</a></code></td>
+    <td>float: Доля данных для тестового набора.</td>
+  </tr><tr class="variable">
+    
+    <td>Variable</td>
+    <td><code><a href="#validation_ratio" class="internal-link" title="traffic_sign_recognition_MAIN.validation_ratio">validation<wbr></wbr>_ratio</a></code></td>
+    <td>float: Доля данных для валидационного набора.</td>
+  </tr>
+</table>
+          
+
+            
+        </div>
+
+        <div id="childList">
+          <div class="basefunction">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.add_image_to_dataset">
+    
+  </a>
+  <a name="add_image_to_dataset">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">add_image_to_dataset</span><span class="function-signature">(image_path, class_id)</span>:
+    
+    <a class="headerLink" href="#add_image_to_dataset" title="traffic_sign_recognition_MAIN.add_image_to_dataset">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Добавление нового изображения в датасет.</p>
+<blockquote>
+</blockquote>
+<p>Добавляет новое изображение дорожного знака в набор данных в указанную директорию класса.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">image<wbr></wbr>_path:</span>str</td><td class="fieldArgDesc">Путь к файлу изображения.</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">class<wbr></wbr>_id:</span>str</td><td class="fieldArgDesc">Идентификатор класса, соответствующий дорожному знаку.</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td colspan="2">None</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code>FileNotFoundError</code></td><td>Если файл изображения не существует.</td></tr><tr><td class="fieldArgContainer"><code>ValueError</code></td><td>Если идентификатор класса недопустим (например, отрицательный).</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.create_model">
+    
+  </a>
+  <a name="create_model">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">create_model</span><span class="function-signature">(num_classes)</span>:
+    
+    <a class="headerLink" href="#create_model" title="traffic_sign_recognition_MAIN.create_model">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Создание модели CNN.</p>
+<blockquote>
+</blockquote>
+<p>Создает и компилирует сверточную нейронную сеть (CNN) для распознавания дорожных знаков.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">num<wbr></wbr>_classes:</span>int</td><td class="fieldArgDesc">Количество классов дорожных знаков.</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">tensorflow.keras.Model</td><td class="fieldArgDesc">Скомпилированная модель Keras, готовая к обучению.</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="traffic_sign_recognition_MAIN.InvalidInputError.html" class="internal-link" title="traffic_sign_recognition_MAIN.InvalidInputError">InvalidInputError</a></code></td><td>Если количество классов недопустимо (например, меньше 1).</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.load_data">
+    
+  </a>
+  <a name="load_data">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">load_data</span><span class="function-signature">()</span>:
+    
+    <a class="headerLink" href="#load_data" title="traffic_sign_recognition_MAIN.load_data">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Загрузка изображений и меток из датасета.</p>
+<blockquote>
+</blockquote>
+<p>Загружает и обрабатывает набор данных для обучения, проверки и тестирования.</p>
+<table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">tuple</td><td class="fieldArgDesc">Кортеж, содержащий наборы данных для обучения, проверки и тестирования (изображения и метки).</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="traffic_sign_recognition_MAIN.DataNotFoundError.html" class="internal-link" title="traffic_sign_recognition_MAIN.DataNotFoundError">DataNotFoundError</a></code></td><td>Если директория с набором данных отсутствует или недоступна.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.preprocess">
+    
+  </a>
+  <a name="preprocess">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">preprocess</span><span class="function-signature">(img)</span>:
+    
+    <a class="headerLink" href="#preprocess" title="traffic_sign_recognition_MAIN.preprocess">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p><blockquote>
+Преобразование изображения в оттенки серого, выравнивание контраста и нормализация.</blockquote>
+<p>Выполняет предварительную обработку изображения дорожного знака для подачи на вход модели.</p>
+<blockquote>
+<blockquote>
+</blockquote>
+</blockquote>
+</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName" colspan="2">Parameters</td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">img</span></td><td class="fieldArgDesc"><span class="undocumented">Undocumented</span></td></tr><tr><td class="fieldArgContainer"><span class="fieldArg">image:</span>numpy.ndarray</td><td class="fieldArgDesc">3D NumPy массив, представляющий RGB изображение.</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Returns</td></tr><tr><td class="fieldArgContainer">numpy.ndarray</td><td class="fieldArgDesc">Предварительно обработанное изображение, нормализованное и преобразованное в градации серого.</td></tr><tr class="fieldStart"><td class="fieldName" colspan="2">Raises</td></tr><tr><td class="fieldArgContainer"><code><a href="traffic_sign_recognition_MAIN.DataNotFoundError.html" class="internal-link" title="traffic_sign_recognition_MAIN.DataNotFoundError">DataNotFoundError</a></code></td><td>Если входное изображение равно None.</td></tr></table></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.train_model">
+    
+  </a>
+  <a name="train_model">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">train_model</span><span class="function-signature">(epochs, batch_size)</span>:
+    
+    <a class="headerLink" href="#train_model" title="traffic_sign_recognition_MAIN.train_model">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Обучение модели.</p></div>
+  </div>
+</div><div class="basefunction">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.visualize_data_distribution">
+    
+  </a>
+  <a name="visualize_data_distribution">
+    
+  </a>
+  <div class="functionHeader">
+    
+    
+    <span class="py-keyword">def</span> <span class="py-defname">visualize_data_distribution</span><span class="function-signature">(labels)</span>:
+    
+    <a class="headerLink" href="#visualize_data_distribution" title="traffic_sign_recognition_MAIN.visualize_data_distribution">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="docstring functionBody">
+    
+    <div><p>Визуализация распределения классов в датасете.</p></div>
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.image_dimensions">
+    
+  </a>
+  <a name="image_dimensions">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">image_dimensions</span>: <code>tuple[<wbr></wbr>int, <wbr></wbr><span class="rst-variable-ellipsis">...</span>]</code> =
+    
+    <a class="headerLink" href="#image_dimensions" title="traffic_sign_recognition_MAIN.image_dimensions">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>tuple: Размеры изображений.</p>
+<p>Содержит три значения:
+- Высота изображения.
+- Ширина изображения.
+- Число цветовых каналов (3 для RGB).</p>
+</div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.label_file">
+    
+  </a>
+  <a name="label_file">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">label_file</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#label_file" title="traffic_sign_recognition_MAIN.label_file">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>str: Имя файла с метками классов.</p>
+<p>Файл должен содержать два столбца:
+- <code>ClassId</code>: числовой идентификатор класса.
+- <code>Name</code>: название класса.</p>
+</div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.path">
+    
+  </a>
+  <a name="path">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">path</span>: <code>str</code> =
+    
+    <a class="headerLink" href="#path" title="traffic_sign_recognition_MAIN.path">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>str: Путь к папке с изображениями для обучения и тестирования.</p>
+<p>Эта папка должна содержать изображения, отсортированные по классам
+в отдельных подкаталогах. Каждый подкаталог представляет один класс.</p>
+</div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.test_ratio">
+    
+  </a>
+  <a name="test_ratio">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">test_ratio</span>: <code>float</code> =
+    
+    <a class="headerLink" href="#test_ratio" title="traffic_sign_recognition_MAIN.test_ratio">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>float: Доля данных для тестового набора.</p>
+<p>Определяет, какая часть данных будет выделена для тестирования.
+Например, значение <code>0.2</code> означает, что 20% всех данных будут
+использоваться для тестирования.</p>
+</div>
+    
+  </div>
+</div><div class="basevariable">
+  
+  
+  <a name="traffic_sign_recognition_MAIN.validation_ratio">
+    
+  </a>
+  <a name="validation_ratio">
+    
+  </a>
+  <div class="functionHeader">
+    
+    <span class="py-defname">validation_ratio</span>: <code>float</code> =
+    
+    <a class="headerLink" href="#validation_ratio" title="traffic_sign_recognition_MAIN.validation_ratio">
+      
+      
+      ¶
+    </a>
+  </div>
+  <div class="functionBody">
+    
+    <div><p>float: Доля данных для валидационного набора.</p>
+<p>Определяет, какая часть данных из тренировочного набора будет выделена
+для валидации. Например, значение <code>0.2</code> означает, что 20% тренировочных
+данных будут использованы для валидации.</p>
+</div>
+    
+  </div>
+</div>
+        </div>
+      
+      </div>
+    </div>
+
+    <footer class="navbar navbar-default">
+
+  
+  <div class="container-fluid">
+    <a href="index.html">API Documentation</a> for traffic_sign_recognition_MAIN,
+  generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a>
+    24.11.1 at 2024-12-14 14:12:34.
+  </div>
+
+  <!-- Search related scripts needs to be loaded at the end of HTML 
+    parsing not to introduce overhead and display HTML data asap -->
+  <script src="ajax.js" type="text/javascript"></script>
+  <script src="searchlib.js" type="text/javascript"></script>
+  <script src="search.js" type="text/javascript"></script>
+
+</footer>
+  
+    <script src="pydoctor.js" type="text/javascript"></script>
+
+  </body>
+</html>
