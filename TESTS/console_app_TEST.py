@@ -2,6 +2,9 @@ import pytest
 from unittest.mock import patch, MagicMock
 from console_app import main
 
+# ------------------------------------------
+# Частично заимствованный код 
+# ------------------------------------------
 
 @pytest.fixture
 def app_instance():
