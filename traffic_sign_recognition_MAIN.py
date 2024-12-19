@@ -77,8 +77,16 @@ def load_data():
         raise DataNotFoundError(f"Папка с данными '{path}' не найдена.")
 
     print("Загрузка данных...")
+    print("Всего классов распознано:", len(os.listdir(path)))
+    print("Импортируем классы.....")
+
     images, labels = [], []
+    count = 0
+
     for class_id in range(len(os.listdir(path))):
+        print(count, end=" ")
+        count += 1
+
         class_path = os.path.join(path, str(class_id))
         if not os.path.exists(class_path):
             raise DataNotFoundError(f"Папка с классом '{class_id}' не найдена.")
@@ -91,23 +99,69 @@ def load_data():
             images.append(img)
             labels.append(class_id)
 
+    print(" ")
+
     images = np.array(images)
     labels = np.array(labels)
 
     # Разделение данных на выборки
     X_train, X_test, y_train, y_test = train_test_split(
-        images, labels, test_size=test_ratio
-    )
+        images, labels, test_size=test_ratio)
+
     X_train, X_validation, y_train, y_validation = train_test_split(
-        X_train, y_train, test_size=validation_ratio
-    )
+        X_train, y_train, test_size=validation_ratio)
+
+    print("Распределение данных:")
+    print("Train", end="");
+    print(X_train.shape, y_train.shape)
+    print("Validation", end="")
+    print(X_validation.shape, y_validation.shape)
+    print("Test", end="")
+    print(X_test.shape, y_test.shape)
 
     # Предобработка изображений
     X_train = np.array([preprocess(img) for img in X_train]).reshape(-1, 32, 32, 1)
     X_validation = np.array([preprocess(img) for img in X_validation]).reshape(-1, 32, 32, 1)
     X_test = np.array([preprocess(img) for img in X_test]).reshape(-1, 32, 32, 1)
 
-    # One-hot encoding меток
+    # ------------------------------------------ Заимствованный код
+    num_of_samples = []  # Количество изображений в каждом классе
+    cols = 5  # Количество колонок для показа
+    num_classes = len(np.unique(y_train))
+
+    fig, axs = plt.subplots(nrows=num_classes, ncols=cols, figsize=(10 * cols, 15 * num_classes))
+    fig.tight_layout()
+
+    data = pd.read_csv(label_file)
+
+    for j in range(num_classes):  # Перебор всех классов
+        # Отбор изображений текущего класса
+        mask = (y_train == j)
+        x_selected = X_train[mask]  # Фильтрация по булевой маске
+
+        if len(x_selected) > 0:  # Проверяем, что в классе есть изображения
+            for i in range(min(cols, len(x_selected))):  # Отображаем не более `cols` изображений
+                resized_img = cv2.resize(x_selected[random.randint(0, len(x_selected) - 1)],
+                                         (1024, 1024))  # Увеличение изображения до 1024*1024
+                axs[j, i].imshow(resized_img, cmap=plt.get_cmap("gray"))
+                axs[j, i].axis("off")
+                if i == 2:  # Устанавливаем заголовок только для одной колонки
+                    axs[j, i].set_title(f"Class {j}")
+            num_of_samples.append(len(x_selected))
+        else:
+            print(f"В классе {j} нет изображений!")
+    plt.show()
+
+    # Визуализация датасета
+    plt.figure(figsize=(22, 5))
+    plt.bar(range(0, num_classes), num_of_samples)
+    plt.title("Распределение изображений каждого класса в датасете")
+    plt.xlabel("Номер класса")
+    plt.ylabel("Количество изображений")
+    plt.show()
+    # ------------------------------------------ Заимствованный код
+
+    # One-hot encoding номеров классов (преобразование в бинарные массивы)
     num_classes = len(np.unique(labels))
     y_train = to_categorical(y_train, num_classes)
     y_validation = to_categorical(y_validation, num_classes)
@@ -144,6 +198,7 @@ def create_model(num_classes):
         Dense(num_classes, activation='softmax')
     ])
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+    print(model.summary())
     return model
 
 
@@ -170,7 +225,7 @@ def train_model(epochs, batch_size):
         shear_range=0.1,
         rotation_range=10
     )
-    data_gen.fit(X_train)
+    # data_gen.fit(X_train)
 
     model = create_model(num_classes)
     history = model.fit(
@@ -182,6 +237,21 @@ def train_model(epochs, batch_size):
 
     model.save('traffic_sign_model.keras')
     print("Модель сохранена как 'traffic_sign_model.keras'")
+
+    # Визуализация процесса обучения
+    plt.figure(1)
+    plt.plot(history.history['loss'])
+    plt.plot(history.history['val_loss'])
+    plt.legend(['training', 'validation'])
+    plt.title('Потери')
+    plt.xlabel('Эпоха')
+    plt.figure(2)
+    plt.plot(history.history['accuracy'])
+    plt.plot(history.history['val_accuracy'])
+    plt.legend(['training', 'validation'])
+    plt.title('Точность')
+    plt.xlabel('Эпоха')
+    plt.show()
 
     # Оценка модели
     score = model.evaluate(X_test, y_test, verbose=0)
@@ -242,10 +312,11 @@ def add_image_to_dataset(image_path, class_id):
 
 .. py:class:: DataNotFoundError(Exception)
 
-   Вызывается, если необходимые данные или файл не найдены.
+   Вызывается, если необходимые данные или файл не найдены
 
 .. py:class:: InvalidInputError(Exception)
 
-   Вызывается, если функция получает недопустимые входные параметры.
+   Вызывается, если функция получает недопустимые входные параметры
 
 '''
+
