@@ -5,12 +5,15 @@ from unittest.mock import patch, MagicMock
 from traffic_sign_recognition_CHECK import preprocess, load_class_names, classify_image, FileNotFoundError, \
     InvalidModelError, InvalidImageError
 
+# ------------------------------------------
+# Частично заимствованный код 
+# ------------------------------------------
+
 # Тестовые данные
 test_image_path = "test_image.jpg"
 test_model_path = "test_model.keras"
 test_labels_path = "test_labels.csv"
 non_existent_path = "non_existent.jpg"
-
 
 # ------------------------------------------
 # Тесты для preprocess
